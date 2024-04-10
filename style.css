@@ -1,0 +1,129 @@
+* {
+padding: 0;
+margin: 0;
+font-family: lato;
+}
+@font-face {
+    font-family: lato;
+    src: url(images/Lato-Regular.ttf);
+}
+html, body, header, .ContainerCapsule, .ContainerAllCapsules, .capsule, .elementContainer  {
+  display: flex;
+  flex-direction: column;
+  
+}
+html, body, header {
+  align-items: center;
+}
+
+body {
+  width: 94%;
+  margin: 30px 0 ;
+}
+header {
+  width: 100%;
+  height: 390px;
+  padding-top: 75px;
+  color: white;
+  gap: 20px;
+  clip-path: polygon(0 0, 100% 0, 100% 79%, 0% 100%);
+  background-size: cover;
+  background-image: linear-gradient(#b20ecf46, #ca5ad72f), url(images/spacex.jpg);
+  margin-bottom: 10px;
+}
+
+.rocket {
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 35px;
+}
+header>h2 {
+  font-size: 20px;
+  letter-spacing: 10px;
+  padding-bottom: 43px;
+}
+header>button {
+  font-size: 15px;
+  color: #767676;
+  padding: 20px 41px;
+  border: none;
+  border-radius: 50px;
+}
+.ContainerCapsule, .ContainerAllCapsules {
+  color: #5A5A5A;
+  font-size: 12px;
+  width: 100%;
+  gap: 18px;
+  margin-bottom: 10px;
+}
+.ContainerAllCapsules{
+  align-items: center;
+}
+.ContainerAllCapsules>h1{
+ align-self: baseline;
+}
+.ContainerButtonCapsule {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  place-content: center; 
+  gap: 28px;
+}
+.capsule {
+  width: 228px;
+  padding: 34.5px 30px;
+  height: auto;
+  color: #ffffff;
+  border-radius: 8px;
+  font-size: 8px ;
+  gap: 3px;
+}
+.capsule>h1 {
+    font-weight: 500;
+}
+.capsule>img {
+  width: 22px;
+  place-self: center;
+  margin-bottom: 3px;
+}
+#capsuleActive {
+    background:linear-gradient(0deg, #7367F0  0%,#CE9FFC 100%);
+}
+#capsuleDestroyed {
+    background:linear-gradient(0deg, #5e2563  0%,#65799b 100%);
+}
+#capsuleUnknown {
+    background:linear-gradient(0deg, #ea6060  0%,#7117ea 100%);
+}
+.ContainerJSON {
+  display: grid;
+  grid-template-columns: repeat(4, 190px);
+  grid-gap: 20px 50px;
+  grid-auto-rows: minmax(auto, auto);
+}
+
+.elementContainer>h1 {
+  font-size: 19px;
+}
+.elementContainer>p {
+  font-size: 16px;
+  line-height: 27px;
+}
+.elementContainer {
+  color: #5A5A5A;
+  -webkit-box-shadow: 0px 0px 5px -1px rgba(143,143,143,1);
+  -moz-box-shadow: 0px 0px 5px -1px rgba(143,143,143,1);
+  box-shadow: 0px 0px 5px -1px rgba(143,143,143,1);
+  border-radius: 10px;
+  padding:17% 15%;
+  gap: 4px;
+}
+footer {
+  font-family: sans-serif;
+  color: white;
+  width: 100%;
+  padding: 41px 0;
+  background-color: #370d3f;
+  text-align: center;
+  font-size: 15px;
+}
