@@ -36,7 +36,10 @@ header {
   font-size: 60px;
   font-weight: 400;
   letter-spacing: 35px;
-  padding-top: 104px;
+  /* padding-top: 104px; */
+  padding-bottom: 20px;
+  animation-name: MainLayout_moveInLeft;
+  animation-duration: 3s;
 }
 .logoHeader {
 position: absolute;
@@ -45,10 +48,12 @@ left: 0;
 margin-left: 55px;
 margin-top: 30px;
 }
-header>h2 {
+.rocketTEXT {
   font-size: 20px;
   letter-spacing: 10px;
-  padding-bottom: 43px;
+  animation-name: MainLayout_moveInRight;
+  animation-duration: 3s;
+  margin-bottom: 60px;
 }
 header>button {
   font-size: 15px;
@@ -149,11 +154,17 @@ footer {
 }
 
 
-
-
 .text-box {
  display: flex;
  place-content: center;
+}
+
+.MainLayout_textBox__CeY_M {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .btn:link,
@@ -164,6 +175,8 @@ footer {
   border-radius: 100px;
   transition: all .2s;
   position: absolute;
+  animation-name: MainLayout_moveInBottom;
+  animation-duration: 2s;
 }
 
 .btn:hover {
@@ -217,5 +230,52 @@ footer {
   100% {
       opacity: 1;
       transform: translateY(0px);
+  }
+}
+
+
+@keyframes MainLayout_moveInLeft{
+  0% {
+      opacity: 0;
+      transform: translateX(-100px)
+  }
+
+  80% {
+      transform: translateX(20px)
+  }
+
+  to {
+      opacity: 1;
+      transform: translate(0)
+  }
+}
+
+
+@keyframes MainLayout_moveInRight {
+  0% {
+      opacity: 0;
+      transform: translateX(100px)
+  }
+
+  80% {
+      transform: translateX(-10px)
+  }
+
+  to {
+      opacity: 1;
+      transform: translate(0)
+  }
+}
+
+
+@keyframes MainLayout_moveInBottom {
+  0% {
+      opacity: 0;
+      transform: translateY(100px)
+  }
+
+  to {
+      opacity: 1;
+      transform: translate(0)
   }
 }
