@@ -9,7 +9,6 @@ A través de esta integración, logré mostrar información actualizada sobre la
  ## Resultado final:
 
    <div style="display: flex; place-content: center; aling-items: center;"">
-<img src="https://github.com/GiselleLop/Movie-Challenge/blob/main/images/RESULTADO1.png" width="400" />
-<img src="https://github.com/GiselleLop/Movie-Challenge/blob/main/images/RESUL2.png" width="600" />
+<img src="https://github.com/GiselleLop/RocketLab-Exercise/blob/main/images/product.png" />
  </div>
  
